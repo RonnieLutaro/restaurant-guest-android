@@ -5,8 +5,8 @@
     <color name="colorAccent">#fc8019</color>
 
 
-    <color name="colorAccentLight">#FDB170</color>
-    <color name="colorAccentLightLight">#FCCCA4</color>
+    <color name="colorAccentLight">#F7A35D</color>
+    <color name="colorAccentLightLight">#FCBC86</color>
     <color name="navigation_drawar">#FFF</color>
     <color name="toolbar">@color/white</color>
     <color name="drawar_text">@color/colorPrimary</color>
