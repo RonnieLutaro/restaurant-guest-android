@@ -93,14 +93,28 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
         starttime="";
         endtime="";
         if (!menuLists.get(position).getStart_time().equalsIgnoreCase("0") && !menuLists.get(position).getEnd_time().equalsIgnoreCase("0")) {
+
+            SimpleDateFormat _24HourSDF = new SimpleDateFormat("HH:mm");
+            SimpleDateFormat _12HourSDF = new SimpleDateFormat("hh:mm a");
             try {
+                Date _24HourStart = _24HourSDF.parse(menuLists.get(position).getStart_time());
+                Date _24HourEnd = _24HourSDF.parse(menuLists.get(position).getEnd_time());
+                starttime=_12HourSDF.format(_24HourStart);
+                endtime=_12HourSDF.format(_24HourEnd);
+                holder.tvtime.setVisibility(View.VISIBLE);
+                holder.tvtime.setText(starttime+" - "+endtime);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+            /* try {
                 starttime = LocalTime.parse(menuLists.get(position).getStart_time(), DateTimeFormatter.ofPattern("HH:mm")).format(DateTimeFormatter.ofPattern("hh:mm a"));
                 endtime = LocalTime.parse(menuLists.get(position).getEnd_time(), DateTimeFormatter.ofPattern("HH:mm")).format(DateTimeFormatter.ofPattern("hh:mm a"));
                 holder.tvtime.setVisibility(View.VISIBLE);
                 holder.tvtime.setText(starttime+" - "+endtime);
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+            }*/
 
         }else{
             holder.tvtime.setVisibility(View.GONE);
@@ -174,8 +188,6 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
                             holder.incre.performClick();
                         } else {
                             //Toast.makeText(activity, "Delivery not available", Toast.LENGTH_SHORT).show();
-                            starttime = LocalTime.parse(menuLists.get(position).getStart_time(), DateTimeFormatter.ofPattern("HH:mm")).format(DateTimeFormatter.ofPattern("hh:mm a"));
-                            endtime = LocalTime.parse(menuLists.get(position).getEnd_time(), DateTimeFormatter.ofPattern("HH:mm")).format(DateTimeFormatter.ofPattern("hh:mm a"));
                             String msg =  String.format(menuLists.get(position).getFood_time_msg(), menuLists.get(position).getName(), starttime+" - "+endtime);
                             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                             builder.setTitle(R.string.app_name);
@@ -280,8 +292,16 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
                 if (dbcat==null || cat_type.equals(dbcat)){
                     if (cat_type.equals("advance")) {
 
-                        String[] separated = menuLists.get(position).getKg().split(" ");
-                        kilo= Integer.parseInt(separated[0]);
+                        String[] separated = new String[0];
+//                        try {
+                        if (menuLists.get(position).getKg()!=null && !menuLists.get(position).getKg().equals("")) {
+                            separated = menuLists.get(position).getKg().split(" ");
+                            kilo = Integer.parseInt(separated[0]);
+
+                        }
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        }
 
                         final String food_cat="";
 

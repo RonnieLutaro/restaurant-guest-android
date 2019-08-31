@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.myinnos:AndroidScratchCard:v1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db0bc20b9733666756ba0fb1fed374bb/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db0bc20b9733666756ba0fb1fed374bb/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/24f0ab43aa18f114530df5e04080c0ea/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/24f0ab43aa18f114530df5e04080c0ea/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

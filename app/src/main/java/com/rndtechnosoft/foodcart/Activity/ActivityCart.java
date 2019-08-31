@@ -213,7 +213,7 @@ public class ActivityCart extends AppCompatActivity implements AlertDialogRadio.
             discountlayout.setVisibility(View.GONE);
         }
 
-        if (coupon_code!=null && !coupon_code.equals("")){
+        if (coupon_code!=null && !coupon_code.equals("") && discount!=null && !discount.equals("")){
             linearcoupon.setVisibility(View.GONE);
             linearcode.setVisibility(View.VISIBLE);
             txtcoupon.setText(coupon_code);
@@ -237,6 +237,7 @@ public class ActivityCart extends AppCompatActivity implements AlertDialogRadio.
         linearcoupon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finish();
                 startActivity(new Intent(ActivityCart.this,CouponActivity.class)
                         .putExtra("amount",txtSubTotal.getText().toString())
                         .putExtra("ischecked",Constant_Api.WALLET_FLAG)
@@ -930,7 +931,7 @@ public class ActivityCart extends AppCompatActivity implements AlertDialogRadio.
             linearWallet.setVisibility(View.VISIBLE);
             txtWallet.setText("-"+getResources().getString(R.string.rupee)+String.valueOf(cwall));
             txtWallet.setTextColor(getResources().getColor(R.color.new_green));
-        }else if (Integer.parseInt(payamt)<=cwall && cwall!=0) {
+        }else if (Double.valueOf(payamt)<=cwall && cwall!=0) {
             txtTotal.setText(getApplicationContext().getResources().getString(R.string.rupee) + "0");
             linearWallet.setVisibility(View.VISIBLE);
             txtWallet.setText("-"+getResources().getString(R.string.rupee)+String.valueOf(cwall));
