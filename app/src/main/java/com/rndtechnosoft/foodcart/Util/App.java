@@ -74,11 +74,11 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+        /*CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/futura_medium_bt.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
-        );
+        );*/
     }
 
 }

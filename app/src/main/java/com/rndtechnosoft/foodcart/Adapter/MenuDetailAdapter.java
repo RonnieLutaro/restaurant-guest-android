@@ -6,6 +6,9 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.database.SQLException;
+import android.graphics.Typeface;
+import android.os.Build;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
@@ -189,7 +192,7 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
                         } else {
                             //Toast.makeText(activity, "Delivery not available", Toast.LENGTH_SHORT).show();
                             String msg =  String.format(menuLists.get(position).getFood_time_msg(), menuLists.get(position).getName(), starttime+" - "+endtime);
-                            AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+                            /*AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                             builder.setTitle(R.string.app_name);
                             builder.setMessage(msg);
                             builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -197,7 +200,21 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
 
                                 }
                             });
-                            builder.show();
+                            builder.show();*/
+                            AlertDialog dialog=new AlertDialog.Builder(activity).setTitle(R.string.app_name).setMessage(msg)
+                                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                                        }
+                                    }).show();
+                            TextView textView=dialog.findViewById(android.R.id.message);
+                            Typeface face= null;
+                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                                face = activity.getResources()
+                                        .getFont(R.font.roboto_medium);
+                            }
+                            textView.setTypeface(face);
                         }
                     } catch (ParseException e) {
                         e.printStackTrace();
@@ -237,9 +254,6 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
             holder.r_addcart.setVisibility(View.GONE);
             holder.tvAddtoCart.setVisibility(View.VISIBLE);
         }
-        holder.name.setTypeface(method.OpenSans_Regular);
-        holder.desc.setTypeface(method.OpenSans_Regular);
-        holder.price.setTypeface(method.OpenSans_Regular);
 
         if (cat_type.equalsIgnoreCase("advance")) {
             holder.spinkg.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -439,7 +453,33 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
     }
 
     public void showAlertDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+
+        final AlertDialog dialog;
+        dialog=new AlertDialog.Builder(activity).setTitle(R.string.confirm).setMessage(R.string.db_exist_alert)
+                .setPositiveButton(R.string.option_yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dbhelper.deleteAllData();
+                        activity.invalidateOptionsMenu();
+                        dbhelper.close();
+                    }
+                }).setNegativeButton(R.string.option_no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dbhelper.close();
+//                        dialog.cancel();
+                    }
+                }).show();
+        TextView textView=dialog.findViewById(android.R.id.message);
+        Typeface face= null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            face = activity.getResources()
+                    .getFont(R.font.roboto_medium);
+        }
+        textView.setTypeface(face);
+
+
+       /* AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle(R.string.confirm);
         builder.setMessage(activity.getString(R.string.db_exist_alert));
         builder.setCancelable(false);
@@ -460,7 +500,7 @@ public class MenuDetailAdapter extends RecyclerView.Adapter<MenuDetailAdapter.Vi
             }
         });
         AlertDialog alert = builder.create();
-        alert.show();
+        alert.show();*/
 
     }
 

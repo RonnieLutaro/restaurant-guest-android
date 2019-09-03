@@ -27,10 +27,10 @@
             android:id="@+id/contact_us"
             android:icon="@drawable/ic_contact"
             android:title="@string/contact_us" />
-        <item
+        <!--<item
             android:id="@+id/rate_app"
             android:icon="@drawable/ic_rate"
-            android:title="@string/rate_app" />
+            android:title="@string/rate_app" />-->
         <!--<item
             android:id="@+id/more_app"
             android:icon="@drawable/ic_more"

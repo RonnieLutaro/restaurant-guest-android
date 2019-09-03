@@ -77,10 +77,6 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
 
         if(menuLists.get(position).getStatus().equalsIgnoreCase(Constant_Api.TAKE_AWAY)){
         }
-        holder.orderno.setTypeface(method.OpenSans_Regular);
-        holder.time.setTypeface(method.OpenSans_Regular);
-        holder.type.setTypeface(method.OpenSans_Regular);
-        holder.type.setTypeface(method.OpenSans_Regular);
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,29 +117,69 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
                             long sec = ((serverUptimeSeconds % 86400) % 3600) % 60;
                             if (min > 0) {
                                 if (hour<10 && min<10 && sec<10) {
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":0" + min + ":0" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":0" + min + ":0" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else if (hour<10 && min<10){
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":0" + min + ":" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":0" + min + ":" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else if (hour<10 && sec<10){
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":" + min + ":0" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":" + min + ":0" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else if (min<10 && sec<10){
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":0" + min + ":0" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":0" + min + ":0" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else if (hour<10){
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":" + min + ":" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), "0"+hour + ":" + min + ":" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else if (min<10){
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":0" + min + ":" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":0" + min + ":" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else if (sec<10){
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":" + min + ":0" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":" + min + ":0" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }else {
-                                    String minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":" + min + ":" + sec);
-                                    holder.deliveryTime.setText(minutesLeft);
+                                    String minutesLeft = null;
+                                    try {
+                                        minutesLeft = String.format(menuLists.get(position).getDel_msg(), hour + ":" + min + ":" + sec);
+                                        holder.deliveryTime.setText(minutesLeft);
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                 }
 
                             } else {

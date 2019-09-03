@@ -7,6 +7,7 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:background="@color/white">
 
 
@@ -30,7 +31,7 @@
                 app:civ_circle_background_color="@color/Color_Silver" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center"
                 android:gravity="center"
@@ -39,22 +40,21 @@
 
                 <TextView
                     android:id="@+id/user_name"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:fontFamily="monospace"
+                    android:layout_gravity="center"
                     android:inputType="textCapWords"
                     android:text="No Data"
+                    android:gravity="center"
                     android:textColor="@color/finestBlack"
                     android:textSize="20dp"
                     android:textStyle="bold|italic" />
 
                 <TextView
                     android:id="@+id/u_name"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="monospace"
                     android:gravity="center"
                     android:paddingTop="@dimen/_5sdp"
                     android:text="No Data"
@@ -133,8 +133,8 @@
                 android:padding="20dp">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
                     android:layout_gravity="start"
                     android:src="@drawable/ic_reward" />
 
@@ -143,13 +143,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:paddingLeft="@dimen/_5sdp">
+                    android:paddingLeft="20dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|top"
-                        android:text="Coupons"
+                        android:text="Scratch Coupons"
                         android:textColor="@color/finestBlack"
                         android:textSize="16dp"
                         android:textStyle="bold" />

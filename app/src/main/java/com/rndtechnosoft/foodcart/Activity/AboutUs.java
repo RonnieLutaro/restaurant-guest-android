@@ -56,35 +56,19 @@ public class AboutUs extends AppCompatActivity {
         textView_titleEmail = (TextView) findViewById(R.id.textView_TitleEmail_about_us);
         textView_titleWebside = (TextView) findViewById(R.id.textView_TitleWebsite_about_us);
         textView_titleAbout = (TextView) findViewById(R.id.textView_TitleContact_about_us);
-
-        textView_titleVerson.setTypeface(method.OpenSans_Semibold);
-        textView_titleAuthore.setTypeface(method.OpenSans_Semibold);
-        textView_titleAbout.setTypeface(method.OpenSans_Semibold);
-        textView_titleCompany.setTypeface(method.OpenSans_Semibold);
-        textView_titleEmail.setTypeface(method.OpenSans_Semibold);
-        textView_titleWebside.setTypeface(method.OpenSans_Semibold);
-        textView_titleAbout.setTypeface(method.OpenSans_Semibold);
         
         app_logo = (ImageView) findViewById(R.id.app_logo_about_us);
 
         textView_app_name.setText(Constant_Api.aboutUs.getApp_name());
-        textView_app_name.setTypeface(method.OpenSans_Semibold);
-
         Glide.with(getApplication()).load(Constant_Api.image + Constant_Api.aboutUs.getApp_logo())
                 .into(app_logo);
 
         textView_app_version.setText(Constant_Api.aboutUs.getApp_version());
-        textView_app_version.setTypeface(method.OpenSans_Regular);
         textView_app_author.setText(Constant_Api.aboutUs.getApp_author());
-        textView_app_author.setTypeface(method.OpenSans_Regular);
         textView_app_contact.setText(Constant_Api.aboutUs.getApp_contact());
-        textView_app_contact.setTypeface(method.OpenSans_Regular);
         textView_app_email.setText(Constant_Api.aboutUs.getApp_email());
-        textView_app_email.setTypeface(method.OpenSans_Regular);
         textView_app_website.setText(Constant_Api.aboutUs.getApp_website());
-        textView_app_website.setTypeface(method.OpenSans_Regular);
         textView_app_description.setText(Html.fromHtml(Constant_Api.aboutUs.getApp_description()));
-        textView_app_description.setTypeface(method.OpenSans_Regular);
 
     }
 

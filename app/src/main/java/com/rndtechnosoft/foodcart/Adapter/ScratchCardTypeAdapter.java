@@ -2,6 +2,7 @@ package com.rndtechnosoft.foodcart.Adapter;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -190,6 +191,19 @@ public class ScratchCardTypeAdapter extends RecyclerView.Adapter {
         final Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCanceledOnTouchOutside(true);
+        dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialogInterface) {
+                dialog.dismiss();
+                scratchCardActivity.getCouponList();
+            }
+        });
+        dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialogInterface) {
+                scratchCardActivity.getCouponList();
+            }
+        });
         dialog.setContentView(R.layout.scratch_dialog);
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         Window window = dialog.getWindow();
@@ -205,8 +219,8 @@ public class ScratchCardTypeAdapter extends RecyclerView.Adapter {
         Button dialogButton2 = (Button) dialog.findViewById(R.id.btn2);
         LinearLayout linearTextScratch = dialog.findViewById(R.id.textscratch);
         TextView texttitle = dialog.findViewById(R.id.texttitle);
-        final TextView text_dialog = dialog.findViewById(R.id.text_dialog);
         TextView textamount = dialog.findViewById(R.id.textamount);
+        final TextView text_dialog = dialog.findViewById(R.id.text_dialog);
         ImageView imgview= dialog.findViewById(R.id.imgview);
         text_dialog.setVisibility(View.GONE);
 
@@ -216,6 +230,7 @@ public class ScratchCardTypeAdapter extends RecyclerView.Adapter {
             if (Integer.parseInt(dataSet.get(position).getScratch().getAmount())>0) {
                 texttitle.setText(dataSet.get(position).getScratch().getCoupon_text());
                 text_dialog.setText(dataSet.get(position).getScratch().getCongratsmsg());
+                textamount.setText(dataSet.get(position).getScratch().getAmount());
                 textamount.setVisibility(View.VISIBLE);
             }else {
                 texttitle.setText(dataSet.get(position).getScratch().getSorrymsg());

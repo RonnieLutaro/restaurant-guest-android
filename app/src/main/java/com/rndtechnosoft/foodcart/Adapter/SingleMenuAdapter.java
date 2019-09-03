@@ -87,8 +87,6 @@ public class SingleMenuAdapter extends RecyclerView.Adapter<SingleMenuAdapter.Vi
             holder.tvAdd.setVisibility(View.VISIBLE);
         }
         holder.count.setText(""+count);
-        holder.tv_item_name.setTypeface(method.OpenSans_Regular);
-        holder.price.setTypeface(method.OpenSans_Regular);
 
         if (cat_type.equalsIgnoreCase("instock")){
             holder.spinspe.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

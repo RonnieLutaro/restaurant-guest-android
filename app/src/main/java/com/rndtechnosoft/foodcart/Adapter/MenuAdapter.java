@@ -52,7 +52,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
         Glide.with(activity).load(menuLists.get(position).getCategory_image()).into(holder.imageView_Gallery);
         holder.textView_galleryName.setText(menuLists.get(position).getCategory_name());
-        holder.textView_galleryName.setTypeface(method.OpenSans_Regular);
+//        holder.textView_galleryName.setTypeface(method.OpenSans_Regular);
 
         holder.imageView_Gallery.setOnClickListener(new View.OnClickListener() {
             @Override

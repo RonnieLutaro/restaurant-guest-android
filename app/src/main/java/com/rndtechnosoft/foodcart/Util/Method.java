@@ -45,7 +45,7 @@ public class Method {
 
     public Method(Activity activity) {
         this.activity = activity;
-        try {
+        /*try {
             futura_medium_bt = Typeface.createFromAsset(activity.getAssets(), "fonts/futura_medium_bt.ttf");
             OpenSans_Regular = Typeface.createFromAsset(activity.getAssets(), "fonts/OpenSans_Regular.ttf");
             OpenSans_Semibold = Typeface.createFromAsset(activity.getAssets(), "fonts/OpenSans_Semibold.ttf");
@@ -53,7 +53,7 @@ public class Method {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     public static void forceRTLIfSupported(Window window, Activity activity) {

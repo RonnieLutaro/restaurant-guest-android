@@ -82,7 +82,7 @@ public class ScratchCardActivity extends AppCompatActivity {
 
     public void getCouponList() {
         if (adapter!=null)
-            adapter.notifyDataSetChanged();
+            adapter=null;
         scratchProgress.show();
         nodata.setVisibility(View.GONE);
 

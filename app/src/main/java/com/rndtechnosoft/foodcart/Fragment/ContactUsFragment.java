@@ -43,13 +43,6 @@ public class ContactUsFragment extends Fragment {
         editText_description = (EditText) view.findViewById(R.id.textView_description_contactUS_fragment);
         button_submit = (Button) view.findViewById(R.id.button_contactus_fragment);
 
-        editText_name.setTypeface(method.OpenSans_Regular);
-        editText_email.setTypeface(method.OpenSans_Regular);
-        editText_phoneNumber.setTypeface(method.OpenSans_Regular);
-        editText_subject.setTypeface(method.OpenSans_Regular);
-        editText_description.setTypeface(method.OpenSans_Regular);
-        button_submit.setTypeface(method.OpenSans_Regular);
-
 
         button_submit.setOnClickListener(new View.OnClickListener() {
             @Override

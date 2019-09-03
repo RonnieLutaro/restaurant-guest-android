@@ -34,7 +34,6 @@ public class FacilitiesAdapter extends RecyclerView.Adapter<FacilitiesAdapter.Vi
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         holder.textView_Name.setText(separated[position]);
-        holder.textView_Name.setTypeface(method.OpenSans_Regular);
 
     }
 

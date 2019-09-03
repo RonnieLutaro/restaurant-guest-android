@@ -45,7 +45,6 @@ public class PrivacyPolice extends AppCompatActivity {
 
         privacy_policy_textview=(TextView)findViewById(R.id.textview_privacy_policy);
         privacy_policy_textview.setText(Html.fromHtml(Constant_Api.aboutUs.getApp_privacy_policy()));
-        privacy_policy_textview.setTypeface(method.OpenSans_Regular);
 
     }
 
