@@ -13,6 +13,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.SQLException;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -553,7 +554,13 @@ public class ActivityCart extends AppCompatActivity implements AlertDialogRadio.
         });
         AlertDialog alert = builder.create();
         alert.show();
-
+ TextView textView=alert.findViewById(android.R.id.message);
+        Typeface face= null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            face = getResources()
+                    .getFont(R.font.roboto_medium);
+        }
+        textView.setTypeface(face);
     }
 
     public void refreshdata(){

@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.database.SQLException;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -175,6 +176,13 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder> {
                 });
                 AlertDialog alert = builder.create();
                 alert.show();
+                TextView textView=alert.findViewById(android.R.id.message);
+                Typeface face= null;
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                    face =context.getResources()
+                            .getFont(R.font.roboto_medium);
+                }
+                textView.setTypeface(face);
             }
         });
         holder.txtMenuName.setOnClickListener(new View.OnClickListener() {
@@ -204,6 +212,14 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder> {
                 });
                 AlertDialog alert = builder.create();
                 alert.show();
+
+                TextView textView=alert.findViewById(android.R.id.message);
+                Typeface face= null;
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                    face = context.getResources()
+                            .getFont(R.font.roboto_medium);
+                }
+                textView.setTypeface(face);
             }
         });
 
