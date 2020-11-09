@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "145759301459",
-    "firebase_url": "https://foodcart-rnd.firebaseio.com",
-    "project_id": "foodcart-rnd",
-    "storage_bucket": "foodcart-rnd.appspot.com"
+    "project_number": "814018331286",
+    "firebase_url": "https://restaurant-guest-973fc.firebaseio.com",
+    "project_id": "restaurant-guest-973fc",
+    "storage_bucket": "restaurant-guest-973fc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:145759301459:android:7779518c0ae74367",
+        "mobilesdk_app_id": "1:814018331286:android:ac3073b0436b48349d78b7",
         "android_client_info": {
           "package_name": "com.rndtechnosoft.foodcart"
         }
       },
       "oauth_client": [
         {
-          "client_id": "145759301459-9a6bp3h0t6iv9h7vtc5hps4ijpf8e6ak.apps.googleusercontent.com",
+          "client_id": "814018331286-5m9il6da88dn5folaksi0csssvdcpt0a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCM-eCpNpEr3TL7MpuxeoZxjMIVRQb7ZGM"
+          "current_key": "AIzaSyA6SRkNKQ96HZTxHbgIgSvJnckkNTZZoSk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "145759301459-9a6bp3h0t6iv9h7vtc5hps4ijpf8e6ak.apps.googleusercontent.com",
+              "client_id": "814018331286-5m9il6da88dn5folaksi0csssvdcpt0a.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

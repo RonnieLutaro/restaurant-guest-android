@@ -52,8 +52,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editText_otp,editText_name,edittext_dob;
     private Button button_submit,button_send;
     private LinearLayout otp_layout,form_layout;
-    private ProgressBar
-            progressBar;
+    private ProgressBar progressBar;
     private String TAG = "TAG";
     private String fullname,phone,userid,dob;
     private TextView editText_skip;
@@ -208,7 +207,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        ;
         editText_name.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {

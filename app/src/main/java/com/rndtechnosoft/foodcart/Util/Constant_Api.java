@@ -17,7 +17,7 @@ public class Constant_Api {
     public static String DB_PATH = DB_PATH_START + PACKAGE_NAME + DB_PATH_END;
 
     //main server api url
-    public static String url = "http://ravishah.xyz/foodcart/";
+    public static String url = "https://restaurant-guest-application.herokuapp.com/";
 
     public static String MY_PREFS_NAME="FoodCart";
     public static final String APP_TEMP_FOLDER = "FoodCart";

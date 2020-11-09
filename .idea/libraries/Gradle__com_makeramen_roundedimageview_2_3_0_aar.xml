@@ -2,10 +2,14 @@
   <library name="Gradle: com.makeramen:roundedimageview:2.3.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcc7449850d6ee6e86cd34a6b635ca51/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6fc93e038670192972b022553bb5bd1f/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcc7449850d6ee6e86cd34a6b635ca51/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcc7449850d6ee6e86cd34a6b635ca51/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6fc93e038670192972b022553bb5bd1f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6fc93e038670192972b022553bb5bd1f/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6fc93e038670192972b022553bb5bd1f/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
