@@ -108,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
         resendOtp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String noWithCode = "+91"+phone;
+                String noWithCode = "+256"+phone;
                 startPhoneNumberVerification(noWithCode);
 
                 //editText_skip.setVisibility(View.VISIBLE);
@@ -268,7 +268,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (verifyRegForm()) {
                         if(progressBar.getVisibility()==View.GONE)
                             progressBar.setVisibility(View.VISIBLE);
-                        String noWithCode = "+91"+phone;
+                        String noWithCode = "+256"+phone;
                         startPhoneNumberVerification(noWithCode);
 
                         //editText_skip.setVisibility(View.VISIBLE);
