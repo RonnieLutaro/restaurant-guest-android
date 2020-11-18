@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Food Cart</string>
+D    <string name="app_name">Restaurant Guest</string>
 
     <string name="app_sub_name">Order from app &amp; get 10% off</string>
 
@@ -8,8 +8,8 @@
 
     <string name="isRTL">false</string>
 
-    <string name="rupee">¢</string>
-    <string name="rupeetext">¢ 300</string>
+    <string name="rupee">ugx.</string>
+    <string name="rupeetext">ugx. 300</string>
     <string name="home">Home</string>
     <string name="contact_us">Contact Us</string>
     <string name="rate_app">Rate App</string>
@@ -37,14 +37,14 @@
     <string name="about_us_version">Version</string>
     <string name="about_us_version_text">1.0</string>
     <string name="about_us_author">Author</string>
-    <string name="about_us_Company">Company</string>
-    <string name="about_us_company_name">RnD Technosoft</string>
+    <string name="about_us_Company">Restaurant Guest</string>
+    <string name="about_us_company_name">Restaurant Guest</string>
     <string name="about_us_email">Email</string>
-    <string name="about_us_email_text">hello@rndtechnosoft.com</string>
+    <string name="about_us_email_text">ronnielutaro@gmail.com</string>
     <string name="about_us_website">Website</string>
-    <string name="about_us_website_text">www.rndtechnosoft.com</string>
+    <string name="about_us_website_text">www.ronnielutaro.com</string>
     <string name="about_us_contact">Contact</string>
-    <string name="about_us_contact_text">+91 7304945823</string>
+    <string name="about_us_contact_text">+256772622186</string>
     <string name="about_us_about">About</string>
 
     <!--<RoomDetail string>-->
