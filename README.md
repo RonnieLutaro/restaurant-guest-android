@@ -21,10 +21,9 @@ The 'Restaurant Guest Mobile Application' will enable the Restaurant's customers
 In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'.
 Make sure that you have installed the latest version of android studio 3.+, if not please download it from this [Link](https://developer.android.com/studio/index.html)
 ### Importing Android Project
-To import the template, simply open Android Studio and import/open the template. Make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step.
 
-1. Unzip your project , then go to android studio and import the project ( click the action Open an existing Android studio project )
-2. If you get a popup that inform you to sync gradle click on OK , then wait until the import is done
+1. To import, simply open Android Studio and use the (Get from Version Control) action, provide the repository url and make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step.
+2. If you get a popup that prompts you to sync gradle click on OK , then wait until the import is done
 3. Now navigate to your firebase console ,create a new project with the same package name so you can enable the push noification api
 4. If everything went well, firebase will generate a google-service.json file, download it and put it in your computer
 5. Open your android studio , then go to google-service.json and change it with the new one , now sync your project
