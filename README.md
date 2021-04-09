@@ -22,7 +22,7 @@ The 'Restaurant Guest Mobile Application' will enable the Restaurant's customers
 ### Install Android studio
 In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'.
 Make sure that you have installed the latest version of android studio 3.+, if not please download it from this [Link](https://developer.android.com/studio/index.html)
-### Importing Android Project
+### Import Android Project
 
 1. To import, simply open Android Studio and use the (Get from Version Control) action, provide the repository url and make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step.
 2. If you get a popup that prompts you to sync gradle click on OK , then wait until the import is done
