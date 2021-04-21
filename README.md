@@ -7,12 +7,6 @@ Research was conducted on 133 small business enterprises including **restaurants
 
 This System makes use of a Mobile Application and a Real-time Analytics [Dashboard](https://github.com/RonnieLutaro/restaurant-guest-dashboard). Both the Dashboard and Mobile application consume a [Web API service](https://github.com/RonnieLutaro/restaurant-guest-dashboard). My intention with this project is to develop a more efficient way for restaurants to manage their business process and customer experience. 
 
-## Impact of the solution
-According to a survey carried out by ZDNet, 5.7 hours is the average time spent by millennials on phones each day, while baby boomers devote 5 hours to smartphone use. However 13% of millennial and 5% of boomers say that they spend over 12 hours every day on their phones. 
-
-With all this information put into consideration, a software solution that capitalized on mobile smartphone usage was accounted for as the best canditate.
-This solution will enable customers to be able to access their favorite restaurant's available menu items, place their oders and have them processed through the mobile application. Customers can either decide to takeaway or have their order home delivered.
-
 ## How to set up
 ### Install Android studio
 In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'.
