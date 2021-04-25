@@ -7,6 +7,8 @@ Research was conducted on 133 small business enterprises including **restaurants
 
 This System makes use of a Mobile Application and a Real-time Analytics [Dashboard](https://github.com/RonnieLutaro/restaurant-guest-dashboard). Both the Dashboard and Mobile application consume a [Web API service](https://github.com/RonnieLutaro/restaurant-guest-dashboard). The vision here is to develop a more efficient way for restaurants to manage their business process and customer experience. 
 
+##Features
+
 ## Setting Up
 ### Install Android studio
 In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'.
