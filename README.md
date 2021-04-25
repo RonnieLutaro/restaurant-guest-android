@@ -7,7 +7,7 @@ Research was conducted on 133 small business enterprises including **restaurants
 
 This System makes use of a Mobile Application and a Real-time Analytics [Dashboard](https://github.com/RonnieLutaro/restaurant-guest-dashboard). Both the Dashboard and Mobile application consume a [Web API service](https://github.com/RonnieLutaro/restaurant-guest-dashboard). The vision here is to develop a more efficient way for restaurants to manage their business operations and Customer Experience while receiving and accepting payments from their customers.
 
-##Features
+## Features
 
 ## Setting Up
 ### Install Android studio
