@@ -20,7 +20,7 @@ Make sure that you have installed the latest version of android studio 3.+, if n
 3. Now navigate to your firebase console ,create a new project with the same package name so you can enable the push noification api
 4. If everything went well, firebase will generate a google-service.json file, download it and put it in your computer
 5. Open your android studio , then go to google-service.json and change it with the new one , now sync your project
-6. Return to the firebase console to get the firebase key , settings > Cloud messaging > copy your server key and past it in your dashboard field
+6. Return to the firebase console to get the firebase key , settings > Cloud messaging > copy your server key and paste it in your dashboard field
 
 **Note :**
 Please don't update your gradle version to the latest version , this may cause a lot of issues after this transaction. After compiling the source code in android studio you will be faced with the following message "Failed to resolve: play-services-auth", it's caused by the google-services.json that should be generated on firebase console and placed on the android project folder
