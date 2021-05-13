@@ -1,6 +1,6 @@
 # Restaurant Guest Mobile Application
 ## Overview
-This Android application is part of the full ['Restaurant Guest Software System'](https://github.com/users/RonnieLutaro/projects/5). The System that makes use of a Mobile Application and a Real-time Analytics [Dashboard](https://github.com/RonnieLutaro/restaurant-guest-dashboard). Both the Dashboard and Mobile application consume a [Web API service](https://github.com/RonnieLutaro/restaurant-guest-dashboard). The vision here is to develop a more efficient way for restaurants to manage their business operations and Customer Experience while receiving and accepting payments from their customers.
+This Android application is part of the full ['Restaurant Guest Software System'](https://github.com/users/RonnieLutaro/projects/5). The System makes use of a Mobile Application and a Real-time Analytics [Dashboard](https://github.com/RonnieLutaro/restaurant-guest-dashboard). Both the Dashboard and Mobile application consume a [Web API service](https://github.com/RonnieLutaro/restaurant-guest-dashboard). The vision here is to develop a more efficient way for restaurants to manage their business operations and Customer Experience while receiving and accepting payments from their customers.
 
 ## Inspiration
 Small businesses in Uganda are faced with customer management challenges that lead to business failure as stated in a [research](https://www.researchgate.net/publication/291863118_Causes_of_small_business_failure_in_Uganda_A_case_study_from_Bushenyi_and_Mbarara_towns) that was carried out by Kazooba, in 2006.
