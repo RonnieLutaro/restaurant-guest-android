@@ -8,6 +8,8 @@ Research was conducted on 133 small business enterprises including **restaurants
 
 ## Features
 
+## Screenshots
+
 ## Setting Up
 ### Install Android studio
 In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'.
