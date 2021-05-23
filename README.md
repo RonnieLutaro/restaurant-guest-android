@@ -7,9 +7,9 @@ Small businesses in Uganda are faced with customer management challenges that le
 Research was conducted on 133 small business enterprises including **restaurants**, bars, hotels, and others, it turns out that most of the small businesses in Uganda fail due to a number of factors that result from management problems, inadequate control of inventory, delays in processing applications among others (Kazooba, 2006). The Idea to develop an innovative solution that solves the challenge of small Restaurant business failure gave birth to the 'Restaurant Guest Software System'. 
 
 ## Technologies used 🚀
-1. [Java SE](https://www.oracle.com/java/technologies/javase-downloads.html) 
-2. [Android Studio](https://developer.android.com/studio)
-3. [Firebase](https://firebase.google.com/)
+* [Java SE](https://www.oracle.com/java/technologies/javase-downloads.html) 
+* [Android Studio](https://developer.android.com/studio)
+* [Firebase](https://firebase.google.com/)
 
 ## Setting Up 🛠
 
