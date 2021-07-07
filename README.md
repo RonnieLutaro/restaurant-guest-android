@@ -1,17 +1,17 @@
 # Smart Restaurant Mobile Application
-## Overview
+### Overview
 This Android application is part of the full ['Smart Restaurant System'](https://github.com/users/RonnieLutaro/projects/5). The System makes use of a Mobile Application and a Real-time Analytics Admin Dashboard. Both the Admin Dashboard and Mobile application consume a RESTful [Web API service](https://github.com/RonnieLutaro/smart-restaurant-web-API). The vision here is to develop a more efficient way for restaurants to manage their business operations and Customer Experience while receiving and accepting digital payments from their customers.
 
-## Inspiration 💡
+### Inspiration 💡
 Small businesses in Uganda are faced with customer management challenges that lead to business failure as stated in a [research](https://www.researchgate.net/publication/291863118_Causes_of_small_business_failure_in_Uganda_A_case_study_from_Bushenyi_and_Mbarara_towns) that was carried out by Kazooba, in 2006.
 Research was conducted on 133 small business enterprises including **restaurants**, bars, hotels, and others, it turns out that most of the small businesses in Uganda fail due to a number of factors that result from management problems, inadequate control of inventory, delays in processing applications among others (Kazooba, 2006). The Idea to develop an innovative solution that solves the challenge of small Restaurant business failure gave birth to the 'Restaurant Guest Software System'. 
 
-## Technologies used 🚀
+### Technologies used 🚀
 * [Java SE](https://www.oracle.com/java/technologies/javase-downloads.html) 
 * [Android Studio](https://developer.android.com/studio)
 * [Firebase](https://firebase.google.com/)
 
-## Setting Up 🛠
+### Setting Up 🛠
 
 1. `git clone https://github.com/RonnieLutaro/restaurant-guest-android`
 2. Install and setup [Java SE Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html) 
