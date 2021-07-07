@@ -15,7 +15,7 @@ Research was conducted on 133 small business enterprises including **restaurants
 
 1. `git clone https://github.com/RonnieLutaro/restaurant-guest-android`
 2. Install and setup [Java SE Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html) 
-3. Install [Android studio](https://developer.android.com/studio/index.html) >= **V3.0**
+3. Install [Android studio](https://developer.android.com/studio/index.html) >= **v3.0**
 4. Open Android Studio and use **Open an Existing Project** action, navigate to the directory where you cloned this repo and select it to import. Be sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step. Accept licenses to download **SDK 28** if prompted to do so. Alternatively, you may navigate to the **SDK Manager** within Android Studio and manually install **SDK 28**. If you get a popup that prompts you to sync gradle click on OK, then wait until the import is done.
 5. Create a [Firebase](https://firebase.google.com/) account.
 6. Now navigate to your firebase console, create a new project with the same package name as the project's so you can enable the push noification API.
